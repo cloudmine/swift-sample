@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>27333228-D13A-4988-BC17-368188110A39</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Swift Documentation Sample Application</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9113CC6A4831306F7A5A397D2A90E0D4688B0CB4</key>
+		<string>https://github.com/cloudmine/swift-sample.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Swift Documentation Sample Application.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9113CC6A4831306F7A5A397D2A90E0D4688B0CB4</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cloudmine/swift-sample.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9113CC6A4831306F7A5A397D2A90E0D4688B0CB4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9113CC6A4831306F7A5A397D2A90E0D4688B0CB4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>swift-sample</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20475F5415A64FB79EB1C6A8 /* libPods-Swift Documentation Sample Application.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBEC9B1E2BF4067B00554A8 /* libPods-Swift Documentation Sample Application.a */; };
 		EF4E7E1219AFD558006CF389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E7E1119AFD558006CF389 /* AppDelegate.swift */; };
 		EF4E7E1419AFD558006CF389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E7E1319AFD558006CF389 /* ViewController.swift */; };
 		EF4E7E1719AFD558006CF389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4E7E1519AFD558006CF389 /* Main.storyboard */; };
 		EF4E7E1919AFD558006CF389 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4E7E1819AFD558006CF389 /* Images.xcassets */; };
 		EF4E7E2519AFD558006CF389 /* Swift_Documentation_Sample_ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E7E2419AFD558006CF389 /* Swift_Documentation_Sample_ApplicationTests.swift */; };
+		EF76C45E19B610B4004DF124 /* CMCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF76C45D19B610B4004DF124 /* CMCar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D78CE8F4227A482DAEF3C0CD /* Pods-Swift Documentation Sample Application.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Documentation Sample Application.xcconfig"; path = "Pods/Pods-Swift Documentation Sample Application.xcconfig"; sourceTree = "<group>"; };
+		DDBEC9B1E2BF4067B00554A8 /* libPods-Swift Documentation Sample Application.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swift Documentation Sample Application.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4E7E0C19AFD558006CF389 /* Swift Documentation Sample Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Documentation Sample Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4E7E1019AFD558006CF389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF4E7E1119AFD558006CF389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +38,8 @@
 		EF4E7E1E19AFD558006CF389 /* Swift Documentation Sample ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift Documentation Sample ApplicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4E7E2319AFD558006CF389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF4E7E2419AFD558006CF389 /* Swift_Documentation_Sample_ApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Documentation_Sample_ApplicationTests.swift; sourceTree = "<group>"; };
+		EF76C45C19B0F09B004DF124 /* bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bridging-header.h"; sourceTree = SOURCE_ROOT; };
+		EF76C45D19B610B4004DF124 /* CMCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMCar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20475F5415A64FB79EB1C6A8 /* libPods-Swift Documentation Sample Application.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,12 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		515D85224976431A9827DA09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDBEC9B1E2BF4067B00554A8 /* libPods-Swift Documentation Sample Application.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF4E7E0319AFD558006CF389 = {
 			isa = PBXGroup;
 			children = (
 				EF4E7E0E19AFD558006CF389 /* Swift Documentation Sample Application */,
 				EF4E7E2119AFD558006CF389 /* Swift Documentation Sample ApplicationTests */,
 				EF4E7E0D19AFD558006CF389 /* Products */,
+				D78CE8F4227A482DAEF3C0CD /* Pods-Swift Documentation Sample Application.xcconfig */,
+				515D85224976431A9827DA09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +94,8 @@
 			children = (
 				EF4E7E1119AFD558006CF389 /* AppDelegate.swift */,
 				EF4E7E1319AFD558006CF389 /* ViewController.swift */,
+				EF76C45C19B0F09B004DF124 /* bridging-header.h */,
+				EF76C45D19B610B4004DF124 /* CMCar.swift */,
 				EF4E7E1519AFD558006CF389 /* Main.storyboard */,
 				EF4E7E1819AFD558006CF389 /* Images.xcassets */,
 				EF4E7E0F19AFD558006CF389 /* Supporting Files */,
@@ -116,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF4E7E2819AFD558006CF389 /* Build configuration list for PBXNativeTarget "Swift Documentation Sample Application" */;
 			buildPhases = (
+				4EC1500651724FDFAD5DE934 /* Check Pods Manifest.lock */,
 				EF4E7E0819AFD558006CF389 /* Sources */,
 				EF4E7E0919AFD558006CF389 /* Frameworks */,
 				EF4E7E0A19AFD558006CF389 /* Resources */,
+				E0545D76C48B4BBDAD8B69E6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,12 +224,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EC1500651724FDFAD5DE934 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0545D76C48B4BBDAD8B69E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Swift Documentation Sample Application-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EF4E7E0819AFD558006CF389 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EF4E7E1419AFD558006CF389 /* ViewController.swift in Sources */,
+				EF76C45E19B610B4004DF124 /* CMCar.swift in Sources */,
 				EF4E7E1219AFD558006CF389 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,23 +377,27 @@
 		};
 		EF4E7E2919AFD558006CF389 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D78CE8F4227A482DAEF3C0CD /* Pods-Swift Documentation Sample Application.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Swift Documentation Sample Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bridging-header.h";
 			};
 			name = Debug;
 		};
 		EF4E7E2A19AFD558006CF389 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D78CE8F4227A482DAEF3C0CD /* Pods-Swift Documentation Sample Application.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Swift Documentation Sample Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bridging-header.h";
 			};
 			name = Release;
 		};
@@ -395,6 +454,7 @@
 				EF4E7E2A19AFD558006CF389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF4E7E2B19AFD558006CF389 /* Build configuration list for PBXNativeTarget "Swift Documentation Sample ApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +463,7 @@
 				EF4E7E2D19AFD558006CF389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

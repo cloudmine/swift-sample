@@ -1,0 +1,1 @@
+PODS_SWIFT_DOCUMENTATION_SAMPLE_APPLICATION_CLOUDMINE_OTHER_LDFLAGS = -ObjC -lz -framework Accounts -framework CFNetwork -framework CoreFoundation -framework CoreGraphics -framework CoreLocation -framework Foundation -framework MobileCoreServices -framework Social -framework SystemConfiguration -framework UIKit
