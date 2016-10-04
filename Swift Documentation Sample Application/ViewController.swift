@@ -1,18 +1,10 @@
-//
-//  ViewController.swift
-//  Swift Documentation Sample Application
-//
-//  Created by Charles Burnett on 8/28/14.
-//  Copyright (c) 2014 CloudMine. All rights reserved.
-//
-
 import UIKit
+import CloudMine
 
 class ViewController: UIViewController {
                             
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         //Creating an object
         let car: CMCar = CMCar();

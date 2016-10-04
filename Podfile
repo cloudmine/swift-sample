@@ -1,13 +1,11 @@
-# Uncomment this line to define a global platform for your project
-# platform :ios, "6.0"
+platform :ios, '8.0'
 
-target "Swift Documentation Sample Application" do
+target 'Swift Documentation Sample Application' do
+  use_frameworks!
 
-pod 'CloudMine'
+  pod 'CloudMine', '~> 1.7'
 
+  target 'Swift Documentation Sample ApplicationTests' do
+    inherit! :search_paths
+  end
 end
-
-target "Swift Documentation Sample ApplicationTests" do
-
-end
-

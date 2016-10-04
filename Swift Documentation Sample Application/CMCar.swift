@@ -1,10 +1,4 @@
-//
-//  CMCar.swift
-//  Swift Documentation Sample Application
-//
-//  Created by Charles Burnett on 9/2/14.
-//  Copyright (c) 2014 CloudMine. All rights reserved.
-//
+import CloudMine
 
 //CMCar is a CMObject Subclass example
 

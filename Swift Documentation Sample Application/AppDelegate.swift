@@ -1,12 +1,5 @@
-//
-//  AppDelegate.swift
-//  Swift Documentation Sample Application
-//
-//  Created by Charles Burnett on 8/28/14.
-//  Copyright (c) 2014 CloudMine. All rights reserved.
-//
-
 import UIKit
+import CloudMine
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

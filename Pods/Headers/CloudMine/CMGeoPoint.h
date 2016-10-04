@@ -1,1 +1,0 @@
-../../CloudMine/ios/ios/src/Persisted Objects/CMGeoPoint.h
