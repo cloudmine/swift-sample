@@ -19,16 +19,16 @@ class CMCar: CMObject {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
-        make = aDecoder.decodeObjectForKey("make") as? String
-        model = aDecoder.decodeObjectForKey("model") as? String
-        year = aDecoder.decodeObjectForKey("year") as? NSNumber
+        make = aDecoder.decodeObject(forKey: "make") as? String
+        model = aDecoder.decodeObject(forKey: "model") as? String
+        year = aDecoder.decodeObject(forKey: "year") as? NSNumber
     }
 
-    override func encodeWithCoder(aCoder: NSCoder) {
-        super.encodeWithCoder(aCoder)
+    override func encode(with aCoder: NSCoder) {
+        super.encode(with: aCoder)
 
-        aCoder.encodeObject(make, forKey: "make")
-        aCoder.encodeObject(model, forKey: "model")
-        aCoder.encodeObject(year, forKey: "year")
+        aCoder.encode(make, forKey: "make")
+        aCoder.encode(model, forKey: "model")
+        aCoder.encode(year, forKey: "year")
     }
 }

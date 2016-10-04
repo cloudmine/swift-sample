@@ -16,27 +16,27 @@ class ViewController: UIViewController {
         // Sample Actions: A series of calls demonstrating the SDKs capabilities
         // These are nested so they occur one after another; in a real codebase, different
         // calls would be used appropriately during the lifecycle of the application.
-        car.save { (response: CMObjectUploadResponse!) in
-            print("[CMSAMPLE] Object was uploaded successfully! \(response.uploadStatuses)")
+        car.save { (response: CMObjectUploadResponse?) in
+            print("[CMSAMPLE] Object was uploaded successfully! \(response?.uploadStatuses)")
 
-            CMStore.defaultStore().searchObjects("[\"Tesla\"]", additionalOptions: nil) { (response: CMObjectFetchResponse!) in
-                print("[CMSAMPLE] Search Results: \(response)")
+            CMStore.default().searchObjects("[\"Tesla\"]", additionalOptions: nil) { (response: CMObjectFetchResponse?) in
+                print("[CMSAMPLE] Search Results: \(response?.objects)")
 
-                CMStore.defaultStore().allObjectsWithOptions(nil) { (response : CMObjectFetchResponse!) in
-                    print("[CMSAMPLE] All Objects: \(response)")
+                CMStore.default().allObjects(with: nil) { (response : CMObjectFetchResponse?) in
+                    print("[CMSAMPLE] All Objects: \(response?.objects)")
 
-                    CMStore.defaultStore().allObjectsOfClass(CMCar.self, additionalOptions: nil) { (response: CMObjectFetchResponse!) in
-                        print("[CMSAMPLE] All Car Objects: \(response)")
+                    CMStore.default().allObjects(of: CMCar.self, additionalOptions: nil) { (response: CMObjectFetchResponse?) in
+                        print("[CMSAMPLE] All Car Objects: \(response?.objects)")
 
                         let keys = ["ObjectID","secondObjectID"]
-                        CMStore.defaultStore().objectsWithKeys(keys, additionalOptions: nil) { (response: CMObjectFetchResponse!) in
-                            print("[CMSAMPLE] Fetched with keys: \(response)")
+                        CMStore.default().objects(withKeys: keys, additionalOptions: nil) { (response: CMObjectFetchResponse?) in
+                            print("[CMSAMPLE] Fetched with keys: \(response?.objects)")
 
-                            CMStore.defaultStore().searchObjects("[currentLoc near (30,30)]", additionalOptions: nil) { (response: CMObjectFetchResponse!) in
-                                print("[CMSAMPLE] Location Search: \(response)")
+                            CMStore.default().searchObjects("[currentLoc near (30,30)]", additionalOptions: nil) { (response: CMObjectFetchResponse?) in
+                                print("[CMSAMPLE] Location Search: \(response?.objects)")
 
-                                CMStore.defaultStore().deleteObject(car, additionalOptions: nil) { (response: CMDeleteResponse!) in
-                                    print("[CMSAMPLE] Delete Car: \(response)")
+                                CMStore.default().deleteObject(car, additionalOptions: nil) { (response: CMDeleteResponse?) in
+                                    print("[CMSAMPLE] Delete Car: \(response?.success)")
                                 }
                             }
                         }
