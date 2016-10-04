@@ -22,6 +22,7 @@ class CMCar: CMObject {
         make = aDecoder.decodeObject(forKey: "make") as? String
         model = aDecoder.decodeObject(forKey: "model") as? String
         year = aDecoder.decodeObject(forKey: "year") as? NSNumber
+        currentLocation = aDecoder.decodeObject(forKey: "currentLocation") as? CMGeoPoint
     }
 
     override func encode(with aCoder: NSCoder) {
@@ -30,5 +31,6 @@ class CMCar: CMObject {
         aCoder.encode(make, forKey: "make")
         aCoder.encode(model, forKey: "model")
         aCoder.encode(year, forKey: "year")
+        aCoder.encode(currentLocation, forKey:"currentLocation")
     }
 }

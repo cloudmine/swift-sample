@@ -11,7 +11,7 @@ class ViewController: UIViewController {
         car.year  = 2014
         car.model = "Model S"
         car.make  = "Tesla"
-        car.currentLocation = CMGeoPoint(latitude: 30, andLongitude: 30)
+        car.currentLocation = CMGeoPoint(latitude: 30.1, andLongitude: 30.0)
         
         // Sample Actions: A series of calls demonstrating the SDKs capabilities
         // These are nested so they occur one after another; in a real codebase, different
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         car.save { (response: CMObjectUploadResponse?) in
             print("[CMSAMPLE] Object was uploaded successfully! \(response?.uploadStatuses)")
 
-            CMStore.default().searchObjects("[\"Tesla\"]", additionalOptions: nil) { (response: CMObjectFetchResponse?) in
+            CMStore.default().searchObjects("[make = \"Tesla\"]", additionalOptions: nil) { (response: CMObjectFetchResponse?) in
                 print("[CMSAMPLE] Search Results: \(response?.objects)")
 
                 CMStore.default().allObjects(with: nil) { (response : CMObjectFetchResponse?) in
@@ -28,11 +28,11 @@ class ViewController: UIViewController {
                     CMStore.default().allObjects(of: CMCar.self, additionalOptions: nil) { (response: CMObjectFetchResponse?) in
                         print("[CMSAMPLE] All Car Objects: \(response?.objects)")
 
-                        let keys = ["ObjectID","secondObjectID"]
+                        let keys = [car.objectId]
                         CMStore.default().objects(withKeys: keys, additionalOptions: nil) { (response: CMObjectFetchResponse?) in
                             print("[CMSAMPLE] Fetched with keys: \(response?.objects)")
 
-                            CMStore.default().searchObjects("[currentLoc near (30,30)]", additionalOptions: nil) { (response: CMObjectFetchResponse?) in
+                            CMStore.default().searchObjects("[currentLocation near (30.0, 30.0)]", additionalOptions: nil) { (response: CMObjectFetchResponse?) in
                                 print("[CMSAMPLE] Location Search: \(response?.objects)")
 
                                 CMStore.default().deleteObject(car, additionalOptions: nil) { (response: CMDeleteResponse?) in
