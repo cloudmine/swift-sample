@@ -24,36 +24,36 @@ class ViewController: UIViewController {
         //saving the object
         car.save {
             (response : CMObjectUploadResponse!) -> Void in
-            NSLog("Object was uploaded successfully! %@", response.uploadStatuses)
+            print("[CMSAMPLE] Object was uploaded successfully! %@", response.uploadStatuses)
         }
         
         CMStore.defaultStore().searchObjects("[\"Tesla\"]", additionalOptions: nil) {
             (response : CMObjectFetchResponse!) in
-            println("JSON: " + response.description)
+            print("[CMSAMPLE]  JSON: " + response.description)
         }
         
         CMStore.defaultStore().allObjectsWithOptions(nil)
             {
             (response : CMObjectFetchResponse!) in
-            println("JSON: " + response.description)
+            print("[CMSAMPLE] JSON: " + response.description)
         }
         
         CMStore.defaultStore().allObjectsOfClass(CMCar.self, additionalOptions: nil)
             {
                 (response : CMObjectFetchResponse!) in
-                println("JSON: " + response.description)
+                print("[CMSAMPLE] JSON: " + response.description)
         }
         let keys = ["ObjectID","secondObjectID"]
         CMStore.defaultStore().objectsWithKeys(keys, additionalOptions: nil)
             {
                 (response : CMObjectFetchResponse!) in
-                println("JSON: " + response.description)
+                print("[CMSAMPLE] JSON: " + response.description)
         }
         
         CMStore.defaultStore().deleteObject(car, additionalOptions: nil)
             {
                 (response : CMDeleteResponse!) in
-                println("JSON: " + response.description)
+                print("[CMSAMPLE] JSON: " + response.description)
         }
         
         
@@ -61,15 +61,8 @@ class ViewController: UIViewController {
         CMStore.defaultStore().searchObjects("[currentLoc near (30,30)]", additionalOptions: nil)
             {
                 (response : CMObjectFetchResponse!) in
-                println("JSON: " + response.description)
+                print("[CMSAMPLE] JSON: " + response.description)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

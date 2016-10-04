@@ -29,9 +29,9 @@ class CMCar: CMObject {
 
     required init(coder aDecoder: NSCoder!) {
         super.init(coder: aDecoder)
-        make = aDecoder.decodeObjectForKey("make") as NSString!
-        model = aDecoder.decodeObjectForKey("model") as NSString!
-        year = aDecoder.decodeIntegerForKey("year") as Int!
+        make = aDecoder.decodeObjectForKey("make") as? String
+        model = aDecoder.decodeObjectForKey("model") as? String
+        year = aDecoder.decodeIntegerForKey("year") as Int
     }
 
 }

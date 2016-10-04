@@ -179,9 +179,11 @@
 				TargetAttributes = {
 					EF4E7E0B19AFD558006CF389 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0800;
 					};
 					EF4E7E1D19AFD558006CF389 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = EF4E7E0B19AFD558006CF389;
 					};
 				};
@@ -385,6 +387,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "bridging-header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -398,6 +401,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "bridging-header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -416,6 +420,7 @@
 				INFOPLIST_FILE = "Swift Documentation Sample ApplicationTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Documentation Sample Application.app/Swift Documentation Sample Application";
 			};
 			name = Debug;
@@ -431,6 +436,7 @@
 				INFOPLIST_FILE = "Swift Documentation Sample ApplicationTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Documentation Sample Application.app/Swift Documentation Sample Application";
 			};
 			name = Release;
